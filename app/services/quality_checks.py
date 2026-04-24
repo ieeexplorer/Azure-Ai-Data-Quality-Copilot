@@ -30,7 +30,7 @@ def _check_invalid_dates(df: pd.DataFrame) -> dict[str, int]:
 def _check_format_inconsistency(df: pd.DataFrame) -> dict[str, dict[str, Any]]:
     inconsistencies: dict[str, dict[str, Any]] = {}
 
-    object_columns = df.select_dtypes(include=["object"]).columns
+    object_columns = df.select_dtypes(include=["object", "str"]).columns
     for column in object_columns:
         values = df[column].dropna().astype(str)
         if len(values) < 3:
