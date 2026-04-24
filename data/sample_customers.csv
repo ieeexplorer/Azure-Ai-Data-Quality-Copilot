@@ -1,0 +1,11 @@
+customer_id,email,signup_date,country,churn
+1,alice@example.com,2024-01-15,US,0
+2,bob@example.com,2024-02-20,UK,1
+3,,2024-13-05,US,0
+4,charlie@example,2024-03-10,DE,0
+4,charlie@example,2024-03-10,DE,0
+5,555-1200,not-a-date,FR,1
+6,dina@example.com,2024/05/11,US,0
+7,,2024-05-30,JP,1
+8,evan@example.com,2024-06-21,BR,0
+9,fatemeh@example.com,2024-07-18,IR,1
